@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 39 100% 97%;
+    --foreground: 20 30% 19%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 30% 19%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 30% 19%;
+
+    --primary: 20 30% 19%;
+    --primary-foreground: 39 100% 97%;
+
+    --secondary: 32 47% 64%;
+    --secondary-foreground: 20 30% 19%;
+
+    --muted: 32 47% 64%;
+    --muted-foreground: 20 30% 19%;
+
+    --accent: 32 47% 64%;
+    --accent-foreground: 20 30% 19%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 39 100% 97%;
+
+    --border: 20 30% 19%;
+    --input: 20 30% 19%;
+    --ring: 20 30% 19%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-ivory text-brown font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+}
+
+.form-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF3E0 100%);
+}
